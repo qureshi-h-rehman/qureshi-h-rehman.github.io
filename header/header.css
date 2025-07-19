@@ -215,4 +215,11 @@ header {
 body {
   padding-top: 80px !important;
 }
-/* Mobile menu styles would go here */
+/* Add this to your header.css */
+#menuIcon {
+  transition: none !important; /* Disable all transitions */
+}
+
+.menu-btn:hover #menuIcon {
+  animation: none !important; /* Disable hover animation */
+}
