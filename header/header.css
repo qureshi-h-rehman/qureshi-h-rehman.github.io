@@ -1,0 +1,190 @@
+/* Header Specific Styles */
+.hide { display: none !important; }
+.toggle-switch {
+  width: 60px;
+  height: 30px;
+  border-radius: 9999px;
+  background-color: #111827;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-switch:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+.toggle-thumb {
+  width: 24px;
+  height: 24px;
+  background-color: #6366F1;
+  border-radius: 9999px;
+  position: absolute;
+  left: 3px;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  z-index: 1;
+}
+.toggle-switch .sun-icon{
+  width: 16px;
+  height: 16px;
+  color: #111827;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+.toggle-switch .moon-icon {
+  width: 16px;
+  height: 16px;
+  color: #F9FAFB;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.dark .toggle-switch .moon-icon {
+  opacity: 0;
+}
+.dark .toggle-switch .sun-icon {
+  opacity: 1;
+}
+.toggle-switch .sun-icon {
+  opacity: 1;
+}
+.dark .toggle-thumb {
+  transform: translateX(30px);
+}
+.dark .toggle-switch {
+  background-color: #eeeeee;
+}
+
+/* Logo Animation */
+.logo {
+  transition: all 0.3s ease;
+}
+.logo:hover {
+  animation: pulse-slow 1s infinite;
+  transform: scale(1.05);
+}
+
+/* Nav Link Animations */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  transform: translateY(-2px);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6366F1;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* CTA Button Animation */
+.cta-button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+.cta-button:hover::before {
+  left: 100%;
+}
+
+/* Menu Button Animation */
+.menu-btn:hover svg {
+  animation: bounce 0.5s infinite;
+}
+/* header.css */
+header {
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6366F1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #4B5563;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #6366F1;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6366F1;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.dark .nav-links a {
+  color: #D1D5DB;
+}
+
+.dark .nav-links a:hover {
+  color: #A5B4FC;
+}
+
+/* Mobile menu styles would go here */
