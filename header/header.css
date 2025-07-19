@@ -186,5 +186,33 @@ header {
 .dark .nav-links a:hover {
   color: #A5B4FC;
 }
+/* Make header sticky with smooth transition */
+header {
+  position: fixed !important; /* Force sticky */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: slideDown 0.3s ease-out;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  background-color: rgba(249, 250, 251, 0.9) !important; /* Light mode bg with transparency */
+}
 
+.dark header {
+  background-color: rgba(17, 24, 39, 0.9) !important; /* Dark mode bg with transparency */
+}
+
+/* Smooth slide-down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Add padding to body to prevent content hiding behind sticky header */
+body {
+  padding-top: 80px !important;
+}
 /* Mobile menu styles would go here */
