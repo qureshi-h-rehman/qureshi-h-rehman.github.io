@@ -387,3 +387,13 @@
 .sticky-header + main {
   padding-top: 80px;
 }
+
+
+/*Add Extra Text Animation */
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+.animate-fade-in {
+  animation: fade-in 2s ease forwards;
+}
