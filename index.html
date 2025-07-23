@@ -432,74 +432,73 @@
                         <input type="hidden" name="_template" value="basic">
 
                         <!--  Form -->
-                        <form action="https://formspree.io/f/xzzvekpa" method="POST">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="name"
-                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
-                                    <input type="text" id="name" name="name" required
-                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300">
-                                </div>
-                                <div>
-                                    <label for="email"
-                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
-                                    <input type="email" id="email" name="email" required
-                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300">
-                                </div>
-                            </div>
-                            <div class="mt-6">
-                                <label for="subject"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
-                                <input type="text" id="subject" name="subject" required
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name"
+                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
+                                <input type="text" id="name" name="name" required
                                     class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300">
                             </div>
-                            <div class="mt-6">
-                                <label for="message"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
-                                <textarea id="message" name="message" rows="5" required
-                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300"></textarea>
-                            </div>
-                            <button type="submit"
-                                class="mt-6 w-full px-6 py-3 bg-brand text-white rounded-lg font-semibold shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                                Send Message
-                            </button>
-                        </form>
-
-                        <!-- Contact Info -->
-                        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center">
-                                    <i class="fas fa-phone text-brand"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Phone</h4>
-                                    <a class="text-gray-600 dark:text-gray-300 hover:underline"
-                                        href="tel:+918286959434">+91 8286959434</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center">
-                                    <i class="fas fa-envelope text-brand"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Email</h4>
-                                    <a class="text-gray-600 dark:text-gray-300 hover:underline"
-                                        href="mailto:qureshihrehman@gmail.com">qureshihrehman@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center">
-                                    <i class="fas fa-map-marker-alt text-brand"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Location</h4>
-                                    <p class="text-gray-600 dark:text-gray-300">Mumbai, India</p>
-                                </div>
+                            <div>
+                                <label for="email"
+                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300">
                             </div>
                         </div>
+                        <div>
+                            <label for="subject"
+                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="message"
+                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full px-6 py-3 bg-brand text-white rounded-lg font-semibold shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <!-- Contact Info -->
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center">
+                                <i class="fas fa-phone text-brand"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <a class="text-gray-600 dark:text-gray-300 hover:underline" href="tel:+918286959434">+91
+                                    8286959434</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center">
+                                <i class="fas fa-envelope text-brand"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <a class="text-gray-600 dark:text-gray-300 hover:underline"
+                                    href="mailto:qureshihrehman@gmail.com">qureshihrehman@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-brand"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <p class="text-gray-600 dark:text-gray-300">Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -531,4 +530,5 @@
         });
     </script>
 </body>
+
 </html>
