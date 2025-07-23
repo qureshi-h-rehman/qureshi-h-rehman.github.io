@@ -1,6 +1,6 @@
 /* Hero Section with Parallax */
 #home {
-  position: relative;
+/*   position: relative; */
   overflow: hidden;
   background: linear-gradient(135deg, #F9FAFB 0%, #E5E7EB 100%);
 }
