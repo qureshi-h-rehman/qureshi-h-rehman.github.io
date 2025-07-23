@@ -409,6 +409,7 @@
   <input type="hidden" name="_template" value="basic">
   
   <!--  Form -->
+  <form action="https://formspree.io/f/yourFormID" method="POST">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div>
       <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
@@ -419,15 +420,15 @@
       <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300">
     </div>
   </div>
-  <div>
+  <div class="mt-6">
     <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
     <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300">
   </div>
-  <div>
+  <div class="mt-6">
     <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
     <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-brand focus:border-transparent dark:bg-gray-700 transition-all duration-300"></textarea>
   </div>
-  <button type="submit" class="w-full px-6 py-3 bg-brand text-white rounded-lg font-semibold shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+  <button type="submit" class="mt-6 w-full px-6 py-3 bg-brand text-white rounded-lg font-semibold shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
     Send Message
   </button>
 </form>
