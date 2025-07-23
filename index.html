@@ -429,6 +429,8 @@
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
   <form id="contact-form" class="space-y-6">
     <!--  Form -->
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+  <form id="contact-form" class="space-y-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
         <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
@@ -458,14 +460,13 @@
   </form>
 </div>
 
-<!-- JavaScript Code for Google Sheet -->
 <script>
   const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxIjWGalBz4Vfk4KGckCykp1M-Fos5llhayewvFPRIwpTQW_q-gzE3F_6yTJnNY3iQ/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbx_dJLd5h2OjVVwfu2J0YI5sUYdRa_JE4tZyY4qptDKqPTbn9jVZdNtrpyYWFsg5rg/exec"; 
 
     const formData = new FormData(form);
 
@@ -478,11 +479,12 @@
         alert("Something went wrong!");
       }
     } catch (error) {
+      alert("Form submission failed.");
       console.error("Error!", error.message);
-      alert("Form could not be submitted.");
     }
   });
 </script>
+
 
 
                     <!-- Contact Info -->
